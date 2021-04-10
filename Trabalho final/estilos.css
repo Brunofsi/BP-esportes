@@ -41,7 +41,14 @@
     text-align: center;
     float: left;
 }
-
+.produto2{
+ 
+  float: right;
+  margin: 2%;
+  width: 7%;
+  text-align: center;
+  float: left;
+}
 .preço1{
     text-decoration: line-through;
    
@@ -50,9 +57,29 @@
    font-size: 150%;
   
 }
+.prod-paragrafo{
+  font-size: 100%;
+}
+.prod-paragrafo2{
+  font-size: 80%;
+}
+.p1{
+  text-decoration: line-through;
+  font-size: 80%;
+ 
+}
+.p2{
+
+  font-size: 80%;
+}
+.p3{
+
+  font-size: 60%;
+}
 .text-prod{
     margin-left: 20%;
 }
+
 .barner{
     
     float: left;
@@ -62,7 +89,13 @@
 h1{
     text-align: center;
 
-}
+
+  }
+  .promo-camisetas{
+   float: left;
+     margin-left: 1%;
+  }
+
 /*Carrocel*/
 .carousel-inner img {
     width: 100%;

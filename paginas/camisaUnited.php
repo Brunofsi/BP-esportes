@@ -21,9 +21,9 @@
     <!--Menu----------------------------------------------------------->
 
     <div class="topnav">
-        <a href="../Index.html">Home</a>
-        <a href="../Cadastrar.html"> Cadastrar</a>
-        <a href="../login.html">Login</a>
+        <a href="../index.php">Home</a>
+        <a href="../cadastrar.php"> Cadastrar</a>
+        <a href="../login.php">Login</a>
         <div class="search-container">
             <form action="/action_page.php">
                 <input type="text" placeholder="Procurar.." name="Procurar">
@@ -45,10 +45,10 @@
                 <div class="text-prod">
 
                     <p class="text-success">FRETE GRÁTIS</p>
-                    <p class="prod-paragrafo">Bola de Basquete Spalding Fastbreak NBA 7</p>
-                    <p class="preço1">R$ 200,99</p>
-                    <p class="preço2">R$ 129,90</p>
-                    <p class="preço3">4x R$ 32,50</p>
+                    <p class="prod-paragrafo">Camisa Manchester United Third 20/21 s/n° Torcedor Adidas</p>
+                    <p class="preço1">R$ 279,99</p>
+                    <p class="preço2">R$ 189,99</p>
+                    <p class="preço3">4x de R$ 47,50</p>
                     <div class="dropdown">
                         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
                             Tamanho
@@ -63,18 +63,24 @@
                 </div>
             </div>
             <div class="meio">
-               <div onclick="myFunction()"><img src="../imagens/BoladeBasquete05.jpg" width="20%" class="foto">
+               <div onclick="myFunction()"><img src="../imagens/Manchester United Camiseta.jpg" width="20%" class="foto">
                 </div>
-                <div onclick="myFunction2()"><img src="../imagens/BoladeBasquete06.jpg" width="20%" class="foto">
+                <div onclick="myFunction2()"><img src="../imagens/United Third kit costa.png" width="20%" class="foto">
                 </div>
-                <div class="img-Principal" id="a1"><div class="zoom"><img src="../imagens/BoladeBasquete05.jpg" width="100%"></div></div>
-                <div class="img-Principal" id="a2" style="display: none;"><div class="zoom"><img src="../imagens/BoladeBasquete06.jpg"
+                <div class="img-Principal" id="a1"><div class="zoom"><img src="../imagens/Manchester United Camiseta.jpg" width="100%"></div></div>
+                <div class="img-Principal" id="a2" style="display: none;"><div class="zoom"><img src="../imagens/United Third kit costa.png"
                     width="100%"></div></div>
             </div>
             <div class="dir">
-                <p class="titulo">Bola de Basquete Spalding Fastbreak NBA 7</p>
+                <p class="titulo">Camisa Manchester United Third 20/21 s/n° Torcedor Adidas Masculina - Branco+Preto</p>
 
-                <p>Acerte a cesta com Bola Basquete NBA Spalding Fast Break! Com estrutura reforçada, esta bola de basquete é um boa escolha para partidas nas quadras ou no concreto.
+                <p>A terceira Camisa do Manchester United é uma homenagem às origens do clube inglês. Há 110 anos, o
+                    time
+                    do Old Trafford usava um uniforme listrado. Hoje, o clube junto à Adidas resgatam o passado e trazem
+                    esse
+                    manto carregado de história. De tecido leve e respirável, a Camisa Manchester United Adidas
+                    Masculina é a
+                    pedida para os torcedores, apreciadores de um bom futebol e aqueles que adoram colecionar camisas.
                 </p>
 
             </div>
@@ -85,19 +91,19 @@
           
             <div class="row2">
                 <div class="column2">
-                    <img src="../imagens/nba01.png" alt="Paul Pogba" style="width:100%"
+                    <img src="../imagens/paul third kit.jpg" alt="Paul Pogba" style="width:100%"
                         onclick="myFunction3(this);">
                 </div>
                 <div class="column2">
-                    <img src="../imagens/nba02.png" alt="Paul and Baily" style="width:100%"
+                    <img src="../imagens/pogba and baily third kit.jpg" alt="Paul and Baily" style="width:100%"
                         onclick="myFunction3(this);">
                 </div>
                 <div class="column2">
-                    <img src="../imagens/nba03.png" alt="Rash and Mactominay" style="width:100%"
+                    <img src="../imagens/Rash Mc third kit.jpg" alt="Rash and Mactominay" style="width:100%"
                         onclick="myFunction3(this);">
                 </div>
                 <div class="column2">
-                    <img src="../imagens/nba04.png" alt="Bruno" style="width:100%"
+                    <img src="../imagens/Bruno Fernandes third kit.jpg" alt="Bruno" style="width:100%"
                         onclick="myFunction3(this);">
                 </div>
             </div>
@@ -111,35 +117,57 @@
             <div>
                 <h4 style="text-align: center;">Descrição</h4>
                 <br>
-                <p class="pp">Acerte a cesta com Bola Basquete NBA Spalding Fast Break! Com estrutura reforçada, esta bola de basquete é um boa escolha para partidas nas quadras ou no concreto.
+                <p class="pp">A terceira Camisa do Manchester United é uma homenagem às origens do clube inglês. Há 110 anos, o
+                    time
+                    do Old Trafford usava um uniforme listrado. Hoje, o clube junto à Adidas resgatam o passado e trazem
+                    esse
+                    manto carregado de história. De tecido leve e respirável, a Camisa Manchester United Adidas
+                    Masculina é a
+                    pedida para os torcedores, apreciadores de um bom futebol e aqueles que adoram colecionar camisas.
                 </p>
                 <br>
                 <div class="desc-esq">
-                    <strong>Nome:</strong> Bola de Basquete Spalding Fastbreak NBA 7
+                    <strong>Nome:</strong> Camisa Manchester United Third 20/21 s/n° Torcedor Adidas Masculina
                     <br>
-                    <strong>Gênero:</strong> Unissex
+                    <strong>Gênero:</strong> Masculino
                     <br>
                     <strong>Indicado para:</strong> Jogo
                     <br>
-                    <strong>Material:</strong> Borracha
+                    <strong>Clube:</strong> Internacional
+                    <br>
+                    <strong>Time:</strong> Manchester United
+                    <br>
+                    <strong>Gola:</strong> Gola Careca
+                    <br>
+                </div>
+                <div class="desc-esq">
+
+                    <strong>Material:</strong> Poliéster
+                    <br>
+                    <strong>Tipo:</strong> Torcedor
+                    <br>
+                    <strong>Tecnologia:</strong> AEROREADY
+                    <br>
+                    <strong>Definição da Tecnologia:</strong> O tecido antiumidade absorve o suor e ajuda a manter a
+                    pele seca e
+                    confortável
+                    <br>
+                    <strong>Manga:</strong> Manga Curta
+                    <br>
+                    <strong>Escudo:</strong> Bordado
                     <br>
                 </div>
 
                 <div class="desc-esq">
-                    <strong>Composição:</strong> Composição: 100% Borracha. Câmara: Butil.
+                    <strong>Patrocínio</strong>: Com patrocínio
                     <br>
-                    <strong>Peso do Produto:</strong> 450g
+                    <strong>Composição:</strong> 50% Poliéster e 50% Poliéster reciclado
                     <br>
-                    <strong>OBS:</strong> A bola pode vir com a calibragem alterada. Portanto, antes de utilizá-la, verifique e, se necessário, regule.
-                    <br>           
-                </div>
-
-                <div class="desc-esq">
+                    <strong>Garantia do Fabricante:</strong> Contra defeito de fabricação
+                    <br>
                     <strong>Origem:</strong> Estrangeira - Adquirida no mercado interno
                     <br>
-                    <strong>Marca:</strong> Spalding
-                    <br>
-                    <strong>Garantia do Fornecedor:</strong> Contra defeito de fabricação
+                    <strong>Marca:</strong> Adidas
                     <br>
                 </div>
             </div>
@@ -170,7 +198,7 @@
 
             <div class="formasPG">
 
-                <img src="../imagens/siteSeguro.png">
+                <img src="imagens/siteSeguro.png">
 
 
             </div>
@@ -196,6 +224,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
-<script src="../script.js"></script>
+<script src="script.js"></script>
 
 </html>

@@ -21,9 +21,9 @@
     <!--Menu----------------------------------------------------------->
 
     <div class="topnav">
-        <a class="active" href="#">Home</a>
-        <a href="Cadastrar.html">Cadastrar</a>
-        <a href="login.html">Login</a>
+        <a class="active" href="index.php">Home</a>
+        <a href="cadastrar.php">Cadastrar</a>
+        <a href="login.php">Login</a>
         <div class="login-container">
             <form action="/action_page.php">
                 <input type="text" placeholder="Usuário" name="username">
@@ -88,7 +88,7 @@
 
                 <img src="imagens/Frete Gratis.png" width="100%">
                 <div class="produto">
-                    <a href="United Third kit.html"><img src="imagens/Manchester United Camiseta.jpg" width="120%"
+                    <a href="paginas/camisaUnited.php"><img src="imagens/Manchester United Camiseta.jpg" width="120%"
                             style="clear: both;"></a>
                     <div class="text-prod">
                         <p class="prod-paragrafo">Camisa Manchester United Third 20/21 s/n° Torcedor Adidas</p>
@@ -101,7 +101,7 @@
                 </div>
 
                 <div class="produto">
-                    <a href="paginas/camisasp.html"><img src="imagens/SãoPauloFrente.png" width="120%"></a>
+                    <a href="paginas/camisasp.php"><img src="imagens/SãoPauloFrente.png" width="120%"></a>
 
                     <div class="text-prod">
                         <p class="prod-paragrafo">Camisa do São Paulo I 2021 adidas - Masculina</p>
@@ -115,7 +115,7 @@
                 </div>
 
                 <div class="produto">
-                    <a href="paginas/tenisasics.html"><img src="imagens/Tenis Asics.png" width="120%"></a>
+                    <a href="paginas/tenisasics.php"><img src="imagens/Tenis Asics.png" width="120%"></a>
 
                     <div class="text-prod">
                         <p class="prod-paragrafo">Tênis Asics Patriot 12 Noosa - Masculino</p>
@@ -141,7 +141,7 @@
                     </div>
                 </div>
                 <div class="produto">
-                    <a href="paginas/bolabasquete.html"><img src="imagens/Bola de Basquete.png" width="120%"></a>
+                    <a href="paginas/bolabasquete.php"><img src="imagens/Bola de Basquete.png" width="120%"></a>
 
                     <div class="text-prod">
                         <p class="prod-paragrafo">Bola de Basquete Spalding Fastbreak NBA 7</p>

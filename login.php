@@ -15,9 +15,9 @@
 
 <body>
     <div class="topnav">
-        <a href="Index.html">Home</a>
-        <a href="Cadastrar.html"> Cadastrar</a>
-        <a href="login.html" class="active">Login</a>
+        <a href="index.php">Home</a>
+        <a href="cadastrar.php"> Cadastrar</a>
+        <a href="login.php" class="active">Login</a>
         <div class="search-container">
             <form action="/action_page.php">
                 <input type="text" placeholder="Procurar.." name="Procurar">

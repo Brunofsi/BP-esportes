@@ -21,9 +21,9 @@
     <!--Menu----------------------------------------------------------->
 
     <div class="topnav">
-        <a href="Index.html">Home</a>
-        <a href="Cadastrar.html"  class="active"> Cadastrar</a>
-        <a href="login.html">Login</a>
+        <a href="index.php">Home</a>
+        <a href="cadastrar.php"  class="active"> Cadastrar</a>
+        <a href="login.php">Login</a>
         <div class="search-container">
           <form action="/action_page.php">
             <input type="text" placeholder="Procurar.." name="Procurar">
@@ -42,23 +42,23 @@
             <div class="container mt-3">
                 <h3>Faça seu cadastro</h3>
 
-                <form>
+                <form action="realizarCadastro.php" method="post">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Nome</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Primeiro nome">
-                        <input type="text" class="form-control" placeholder="Segundo nome">
+                        <input type="text" class="form-control" placeholder="Primeiro nome" name="PrimeiroNome">
+                        <input type="text" class="form-control" placeholder="Segundo nome" name="SegundoNome">
                     </div>
                     <div class="input-group mb-3 input-group-sm">
                         <div class="input-group-prepend">
                             <span class="input-group-text">CPF</span>
                         </div>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="cpf">
                     </div>
 
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Email">
+                        <input type="text" class="form-control" placeholder="Email" name="email">
                         <div class="input-group-append">
                             <span class="input-group-text">joao@exemplo.com</span>
                         </div>
@@ -68,16 +68,10 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">Senha</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Ex: @54893XXCC">
+                        <input type="password" class="form-control" placeholder="Ex: @54893XXCC" name="senha">
                     </div>
-                    
-                    <div class="input-group mb-3 input-group-sm">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">Cidade</span>
-                        </div>
-                        <input type="text" class="form-control">
-                    </div>
-                    <select name="Estado" class="custom-select">
+                
+                    <select name="estado" class="custom-select">
                         <option selected>Estado</option>
                         <option value="ac">Acre</option>
                         <option value="al">Alagoas</option>
@@ -109,16 +103,23 @@
                     </select>
 
                     <br><br>
+
+                    <div class="input-group mb-3 input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Cidade</span>
+                        </div>
+                        <input type="text" class="form-control" name="cidade">
+                    </div>
+
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                           <span class="input-group-text">Endereço</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Ex:Rua X">
+                        <input type="text" class="form-control" placeholder="Ex:Rua X" name="endereco">
                       </div>
-                </form>
-                
-                <button type="button" class="btn btn-secondary">Cadastrar</button>
-
+                      <button class="btn btn-secondary" type="submit">Cadastrar</button>  
+                    </form>
+                    
 
             </div>
         
@@ -151,10 +152,7 @@
     
             </div>
     
-          
-    
-    
-          
+ 
         </div>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"

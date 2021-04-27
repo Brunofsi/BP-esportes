@@ -74,42 +74,35 @@
                     </div>
 
                     <select name="cod_estados" id="cod_estados" class="custom-select">
-                    <label for="cod_estados">Estado:</label>
+                        <label for="cod_estados">Estado:</label>
                         <option selected>Estado</option>
                         <?php
 
-                        $conexao = mysqli_connect("localhost", "root", "admin", "meusite", 3306);
+                        require('coneccao.php');
 
 				        if($conexao){
 
 					   $query = "SELECT * FROM estados";
 					   $estados = mysqli_query($conexao, $query);
 
-					  while ($linha = $estados->fetch_array()){						
-						echo "<option value = '".$linha["cod_estados"]."'>" .$linha["nome"] ."</option>";				
+					      while ($linha = $estados->fetch_array()){						
+						     echo "<option value = '".$linha["cod_estados"]."'>" .$linha["nome"] ."</option>";				
 					    }
-				    }
-			      ?>
+				        }
+			            ?>
                     </select>
 
                     <br><br>
 
-                    <!-- <div class="input-group mb-3 input-group-sm">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">Cidade</span>
-                        </div>
-                        <input type="text" class="form-control" name="cidade">
-                    </div>-->
 
 
-                
-                    <span class="carregando" >Aguarde, carregando...</span>
+                    <span class="carregando">Aguarde, carregando...</span>
                     <select name="cod_cidades" id="cod_cidades" class="custom-select">
-                    <option selected>Cidade</option>
+                        <option selected>Cidade</option>
                     </select>
-                          
-                          <br>
-                          <br>
+
+                    <br>
+                    <br>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Endereço</span>
@@ -154,37 +147,36 @@
 
         </div>
         <script src="http://www.google.com/jsapi"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-		<script type="text/javascript">
-		  google.load('jquery', '1.3');
-		</script>		
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript">
+        google.load('jquery', '1.3');
+        </script>
 
-		<script
-		src="https://code.jquery.com/jquery-3.6.0.js"
-		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-		crossorigin="anonymous">
-		</script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        </script>
 
-		<script type="text/javascript">
-		$(function(){
-			$('#cod_estados').change(function(){
-				if( $(this).val() ) {
-					$('#cod_cidades').hide();
-					$('.carregando').show();
-					$.getJSON('ajax.php?estado=' + $(this).val(), function(j){
-						var options = '<option value=""></option>';	
-						for (var i = 0; i < j.length; i++) {
-							options += '<option value="' + j[i].cod_cidades + '">' + j[i].nome + '</option>';
-						}	
-						$('#cod_cidades').html(options).show();
-						$('.carregando').hide();
-					});
-				} else {
-					$('#cod_cidades').html('<option value="">– Escolha um estado –</option>');
-				}
-			});
-		});
-		</script>
+        <script type="text/javascript">
+        $(function() {
+            $('#cod_estados').change(function() {
+                if ($(this).val()) {
+                    $('#cod_cidades').hide();
+                    $('.carregando').show();
+                    $.getJSON('ajax.php?estado=' + $(this).val(), function(j) {
+                        var options = '<option value=""></option>';
+                        for (var i = 0; i < j.length; i++) {
+                            options += '<option value="' + j[i].cod_cidades + '">' + j[i].nome +
+                                '</option>';
+                        }
+                        $('#cod_cidades').html(options).show();
+                        $('.carregando').hide();
+                    });
+                } else {
+                    $('#cod_cidades').html('<option value="">– Escolha um estado –</option>');
+                }
+            });
+        });
+        </script>
 
         <script src="script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"

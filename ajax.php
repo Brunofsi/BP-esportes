@@ -1,6 +1,6 @@
 <?php
 
-	$con = mysqli_connect("localhost", "root", "admin", "meusite", 3306);
+require('coneccao.php');
 
 	$cod_estados = $_GET['estado'];
 
@@ -10,7 +10,7 @@
 			FROM cidades
 			WHERE estados_cod_estados=$cod_estados
 			ORDER BY nome";
-	$res = mysqli_query( $con, $sql );
+	$res = mysqli_query( $conexao, $sql );
 	while ( $row = mysqli_fetch_assoc($res) ) {
 		$cidades[] = array(
 			'cod_cidades'	=> $row['cod_cidades'],

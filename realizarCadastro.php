@@ -1,6 +1,6 @@
 <?php
 
-$conexao = mysqli_connect ("localhost", "root","admin", "bpbanco", 3306);
+require('coneccao.php');
 
 $Pnome = $_POST["PrimeiroNome"];
             
@@ -14,13 +14,13 @@ $cpf = $_POST["cpf"];
 
 $Endereco = $_POST["endereco"];
 
-$Estado = $_POST["estados"];
+$Estado = $_POST["cod_estados"];
 
-$cidade = $_POST["cidades"];
+$cidade = $_POST["cod_cidades"];
 
 $senha = $_POST["senha"];
 
-print_r($_POST);
+
 $sql = "INSERT INTO Usuario (nome,email,senha,perfil) VALUES ('$Pnome','$Email','$senha','Cliente')";
 
 if (mysqli_query($conexao, $sql)) {
@@ -29,11 +29,19 @@ if (mysqli_query($conexao, $sql)) {
     
     $idUsuario=mysqli_insert_id($conexao); 
     
+    $sql = "INSERT INTO Cliente (cpf,Usuario_idUsuario,endereco,cidades_cod_cidades) VALUES ('$cpf','$idUsuario','$Endereco','$cidade')";
+    if (mysqli_query($conexao, $sql)) {
 
-//-----------------------------------------------------------------------------
+        echo "<br>Cliente inserido";
 
-    //----------------------------------------------------------------------------------------
-    //$sql = "INSERT INTO Cliente (cpf,Usuario_idUsuario,endereco) VALUES ('$cpf','$idUsuario','$Endereco')";
+    }
+
+    else {
+
+        echo "Erro: " . $sql . "<br>" . mysqli_error($conexao);
+   
+       }
+
    } 
 
 else {
@@ -42,32 +50,5 @@ else {
 
     }
 
-
-            /*
-            $conexao = mysqli_connect ("localhost", "root","admin", "meusite", 3306);
-            
-            $Pnome = $_POST["PrimeiroNome"];
-            
-            $Snome = $_POST["SegundoNome"];
-             
-            $Email = $_POST["email"];
-
-            $cpf = $_POST["cpf"];
-            
-            $Endereco = $_POST["endereco"];
-
-            $Estado = $_POST["estado"];
-            
-            $cidade = $_POST["cidade"];
-
-            $senha = $_POST["senha"];
-
-            $rsClientes= mysqli_query($conexao, "SELECT cpf,senha,PrimeiroNome FROM usuario WHERE '$cpf' = usuario.cpf AND '$senha' = usuario.senha"); 
-
-            if(mysqli_num_rows($rsClientes)){
-                echo "Sucesso";
-            } else {
-                echo "Login deu errado";
-            }*/
 
         ?>

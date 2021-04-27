@@ -6,7 +6,7 @@ $Pnome = $_POST["PrimeiroNome"];
             
 $Snome = $_POST["SegundoNome"];
  
-$Pnome = $Pnome.$Snome;
+$Pnome = $Pnome.' '.$Snome;
 
 $Email = $_POST["email"];
 
@@ -14,9 +14,9 @@ $cpf = $_POST["cpf"];
 
 $Endereco = $_POST["endereco"];
 
-$Estado = $_POST["estado"];
+$Estado = $_POST["estados"];
 
-$cidade = $_POST["cidade"];
+$cidade = $_POST["cidades"];
 
 $senha = $_POST["senha"];
 
@@ -28,7 +28,11 @@ if (mysqli_query($conexao, $sql)) {
     echo "Nova tupla inserida com sucesso!"; 
     
     $idUsuario=mysqli_insert_id($conexao); 
+    
 
+//-----------------------------------------------------------------------------
+
+    //----------------------------------------------------------------------------------------
     //$sql = "INSERT INTO Cliente (cpf,Usuario_idUsuario,endereco) VALUES ('$cpf','$idUsuario','$Endereco')";
    } 
 

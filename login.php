@@ -10,7 +10,7 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    <script src="jquery.min.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
             <h2>Fazer login</h2>
 
             <div class="container">
-                <form action="/action_page.php">
+                <form action="VerificarUsuario.php" method="post">
                     <div class="row">
                         <h2 style="text-align:center">Login com midia social ou manualmente</h2>
                         <div class="vl">
@@ -60,7 +60,7 @@
                         <div class="col">
 
 
-                            <input type="text" name="username" placeholder="Usuário" required>
+                            <input type="text" name="email" placeholder="Email" required>
                             <input type="password" name="password" placeholder="Senha" required>
                             <input type="submit" value="Login">
                         </div>
@@ -113,6 +113,8 @@
 
       
     </div>
+
+    
 </body>
 
 </html>

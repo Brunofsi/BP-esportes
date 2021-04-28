@@ -20,28 +20,12 @@
 
     <!--Menu----------------------------------------------------------->
 
-    <div class="topnav">
+    <div class="topnav nav justify-content-end">
         <a class="active" href="index.php">Home</a>
         <a href="cadastrar.php">Cadastrar</a>
         <a href="login.php">Login</a>
-        <div class="login-container">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Usuário" name="username">
-                <input type="text" placeholder="Senha" name="psw">
-                <button type="submit">Login</button>
-            </form>
-        </div>
-        <div class="search-container">
-
-            <form action="/action_page.php">
-                <input type="text" placeholder="Procurar.." name="Procurar">
-                <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-search" viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg></button>
-            </form>
-        </div>
+     
+ 
     </div>
 
 
@@ -234,6 +218,8 @@
                 </div>
             </div>
 
+            
+
             <img src="imagens/Moda Fitness.png" width="100%">
 
             <br>
@@ -242,14 +228,14 @@
             <br>
             <br>
             <img src="imagens/Promo camisetas.jpg" class="promo-camisetas">
-             <!--***********************************************************************************************-->
-            
+            <!--***********************************************************************************************-->
+
             <div class="produto2">
                 <img src="imagens/Liverpool camiseta 1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Liverpool I 20/21 Nike Masculina</p>
-                    
+
                     <p class="p1">R$ 249,99</p>
                     <p class="p2">R$ 202,99
 
@@ -259,13 +245,13 @@
                 </div>
             </div>
 
-       
+
             <div class="produto2">
                 <img src="imagens/PSG camisa 1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa PSG I 20/21 Nike Masculina</p>
-                    
+
                     <p class="p1">R$ 279,99</p>
                     <p class="p2">R$ 199,99
                     </p>
@@ -279,7 +265,7 @@
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Chelsea I 20/21 Nike Masculina</p>
-                    
+
                     <p class="p1">R$ 279,99</p>
                     <p class="p2">R$ 199,99
 
@@ -295,7 +281,7 @@
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Real Madrid I 20/21</p>
-                    
+
                     <p class="p1">R$ 249,99</p>
                     <p class="p2">R$ 212,99
 
@@ -310,7 +296,7 @@
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Bayern de Munique I 20/21</p>
-                    
+
                     <p class="p1">R$ 300,00</p>
                     <p class="p2">R$ 279,99
 
@@ -321,6 +307,31 @@
                 </div>
             </div>
 
+            <div class="produto2">
+                <img src="imagens/chuteiraNike.jfif" width="120%">
+
+                <div class="text-prod">
+                    <p class="prod-paragrafo2">Chuteira de Campo Nike Vapor 14 Elite Fg - Adulto</p>
+
+                    <p class="p1">R$ 1.999,99</p>
+                    <p class="p2">R$ 1.799,99</p>
+                    <p class="p3">10x de R$ 177,99</p>
+
+                </div>
+            </div>
+
+            <div class="produto2">
+                <img src="imagens/GermanyShirt.png" width="120%">
+
+                <div class="text-prod">
+                    <p class="prod-paragrafo2">Camisa Alemanha II 2020 adidas - Masculina</p>
+
+                    <p class="p1">R$ 289,99</p>
+                    <p class="p2">R$ 249,99</p>
+                    <p class="p3">8x de R$ 31,25</p>
+
+                </div>
+            </div>
             <div style="clear: both;"></div>
             <br><br><br>
         </div>
@@ -361,14 +372,14 @@
     </div>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
-        crossorigin="anonymous"></script>
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
-        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
-        crossorigin="anonymous"></script>
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

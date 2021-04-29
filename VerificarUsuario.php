@@ -1,4 +1,26 @@
 <?php
+
+require('coneccao.php');
+
+$email = $_POST['email'];
+$senha = $_POST['password'];
+
+$autenticar=false;
+
+$sql = mysqli_query($conexao, "SELECT * FROM usuario WHERE email = '{$email}'") or print mysql_error();
+$sql1 = mysqli_query($conexao, "SELECT * FROM usuario WHERE senha = '{$senha}'") or print mysql_error();
+
+if(mysqli_num_rows($sql)>0 && mysqli_num_rows($sql1)>0) $autenticar=true;
+
+
+if($autenticar) {
+    header('Location: login.php?login=sucesso');
+}
+else{
+    header('Location: login.php?login=error');
+}
+
+/*
 #Verifica se tem um email para pesquisa
 if(isset($_POST['email'])){ 
  
@@ -28,5 +50,5 @@ if(isset($_POST['password'])){
         echo json_encode(array('senha' => 'Senha existe')); 
     else 
         echo json_encode(array('senha' => 'Senha não existe.' )); 
-}
+}*/
 ?>

@@ -101,7 +101,13 @@
                     </div>
                     <button class="btn btn-secondary" type="submit">Cadastrar</button>
                 </form>
+             
+             
+                <?php if(isset($_GET['cadastro']) && $_GET['cadastro'] == 'sucesso'){ ?>
 
+                   <div class="text-success">Cadastro realizado com sucesso.</div>
+         
+                <?php } ?>
 
             </div>
 

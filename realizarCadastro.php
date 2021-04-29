@@ -25,14 +25,14 @@ $sql = "INSERT INTO Usuario (nome,email,senha,perfil) VALUES ('$Pnome','$Email',
 
 if (mysqli_query($conexao, $sql)) {
    
-    echo "Nova tupla inserida com sucesso!"; 
+   
     
     $idUsuario=mysqli_insert_id($conexao); 
     
     $sql = "INSERT INTO Cliente (cpf,Usuario_idUsuario,endereco,cidades_cod_cidades) VALUES ('$cpf','$idUsuario','$Endereco','$cidade')";
     if (mysqli_query($conexao, $sql)) {
 
-        echo "<br>Cliente inserido";
+         header('Location: cadastrar.php?cadastro=sucesso');
 
     }
 

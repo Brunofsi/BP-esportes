@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -28,24 +30,25 @@
             <br>
 
     
-            <h2>Fazer login</h2>
+            <h2 style="text-align:center">Login</h2>
 
             <div class="container">
                 <form action="VerificarUsuario.php" method="post">
                     <div class="row">
-                        <h2 style="text-align:center">Login com midia social ou manualmente</h2>
+                      
+                      
                         <div class="vl">
 
                         </div>
 
                         <div class="col">
-                            <a href="https://www.facebook.com/" class="fb btn">
+                            <a href="https://www.facebook.com/" class="fb btn text-primary">
                                 <i class="fa fa-facebook fa-fw"></i> Logar com Facebook
                             </a>
-                            <a href="https://www.twitter.com/" class="twitter btn">
+                            <a href="https://www.twitter.com/" class="twitter btn text-info">
                                 <i class="fa fa-twitter fa-fw"></i> Logar com Twitter
                             </a>
-                            <a href="https://www.google.com/" class="google btn"><i class="fa fa-google fa-fw">
+                            <a href="https://www.google.com/" class="google btn text-danger"><i class="fa fa-google fa-fw">
                                 </i> Logar com Google+
                             </a>
                         </div>
@@ -56,6 +59,19 @@
                             <input type="text" name="email" placeholder="Email" required>
                             <input type="password" name="password" placeholder="Senha" required>
                             <input type="submit" value="Login">
+
+                            <?php if(isset($_GET['login']) && $_GET['login'] == 'error'){ ?>
+
+                              <div class="text-danger">Usuário ou senha inválido(s)</div>
+                                       
+                            <?php } ?>
+
+                            <?php if(isset($_GET['login']) && $_GET['login'] == 'sucesso'){ ?>
+
+                            <div class="text-success">Login realizado com sucesso.</div>
+         
+                            <?php } ?>
+                       
                         </div>
 
                     </div>
@@ -73,7 +89,9 @@
                 </div>
             </div>
         </div>
+        <br><br>
     </div>
+    
     <div class="rodape">
         <div class="incone">
             <a href="https://www.instagram.com/" style="margin-left: 5%;"><svg xmlns="http://www.w3.org/2000/svg"

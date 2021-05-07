@@ -308,27 +308,66 @@
             </div>
 
             <div class="produto2">
-                <img src="imagens/chuteiraNike.jfif" width="120%">
+                <img src="imagens/United first kit.jpeg" width="120%">
 
                 <div class="text-prod">
-                    <p class="prod-paragrafo2">Chuteira de Campo Nike Vapor 14 Elite Fg - Adulto</p>
+                    <p class="prod-paragrafo2">Camisa Manchester United I adidas 20/21 - Masculina</p>
 
-                    <p class="p1">R$ 1.999,99</p>
-                    <p class="p2">R$ 1.799,99</p>
-                    <p class="p3">10x de R$ 177,99</p>
+                    <p class="p1">R$ 279,99</p>
+                    <p class="p2">R$ 179,99</p>
+                    <p class="p3">6x R$ 30,00 </p>
 
                 </div>
             </div>
 
             <div class="produto2">
-                <img src="imagens/GermanyShirt.png" width="120%">
+                <img src="imagens/Juventus.jpeg" width="120%">
 
                 <div class="text-prod">
-                    <p class="prod-paragrafo2">Camisa Alemanha II 2020 adidas - Masculina</p>
+                    <p class="prod-paragrafo2">Camisa Juventus I 20/21 adidas - Masculina</p>
 
-                    <p class="p1">R$ 289,99</p>
-                    <p class="p2">R$ 249,99</p>
-                    <p class="p3">8x de R$ 31,25</p>
+                    <p class="p1">R$ 249,999</p>
+                    <p class="p2">R$ 149,99</p>
+                    <p class="p3">5x R$ 30,00 </p>
+
+                </div>
+            </div>
+
+            <div class="produto2">
+                <img src="imagens/manCity.jfif" width="120%">
+
+                <div class="text-prod">
+                    <p class="prod-paragrafo2">Camisa Manchester City II 20/21 Puma - Masculina</p>
+
+                    <p class="p1">R$ 249,99</p>
+                    <p class="p2">R$ 189,99</p>
+                    <p class="p3">6x R$ 31,66</p>
+
+                </div>
+            </div>
+
+            <div class="produto2">
+                <img src="imagens/Barcelona.jpeg" width="120%">
+
+                <div class="text-prod">
+                    <p class="prod-paragrafo2">Camisa Barcelona I 20/21 Nike - Masculina</p>
+
+                    <p class="p1">R$ 279,99</p>
+                    <p class="p2">R$ 199,99</p>
+                    <p class="p3">6x R$ 33,33</p>
+
+                </div>
+            </div>
+
+            <div class="produto2">
+                <img src="imagens/Arsenal.jpeg" width="120%">
+
+                <div class="text-prod">
+                    <p class="prod-paragrafo2">Camisa Arsenal II 20/21 adidas - Masculina</p>
+
+                    <p class="p1">R$ 279,99</p>
+                    <p class="p2">R$ 179,99</p>
+                    <p class="p3">6x R$ 30,00</p>
 
                 </div>
             </div>

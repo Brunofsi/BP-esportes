@@ -72,7 +72,7 @@
 
                 <img src="imagens/Frete Gratis.png" width="100%">
                 <div class="produto">
-                    <a href="paginas/camisaUnited.php"><img src="imagens/Manchester United Camiseta.jpg" width="120%"
+                    <a href="paginas/camisaUnited.php"><img src="imagens/United1.png" width="120%"
                             style="clear: both;"></a>
                     <div class="text-prod">
                         <p class="prod-paragrafo">Camisa Manchester United Third 20/21 s/n° Torcedor Adidas</p>
@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="produto">
-                    <a href="paginas/camisasp.php"><img src="imagens/SãoPauloFrente.png" width="120%"></a>
+                    <a href="paginas/camisasp.php"><img src="imagens/SaoPaulo1.png" width="120%"></a>
 
                     <div class="text-prod">
                         <p class="prod-paragrafo">Camisa do São Paulo I 2021 adidas - Masculina</p>
@@ -99,7 +99,7 @@
                 </div>
 
                 <div class="produto">
-                    <a href="paginas/tenisasics.php"><img src="imagens/Tenis Asics.png" width="120%"></a>
+                    <a href="paginas/tenisasics.php"><img src="imagens/TenisAsics1.png" width="120%"></a>
 
                     <div class="text-prod">
                         <p class="prod-paragrafo">Tênis Asics Patriot 12 Noosa - Masculino</p>
@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <div class="produto">
-                    <img src="imagens/Tenis Nike.png" width="120%">
+                    <img src="imagens/TenisrevolutionM1.png" width="120%">
 
                     <div class="text-prod">
                         <p class="prod-paragrafo">Tênis Nike Revolution 5 - Masculino</p>
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 <div class="produto">
-                    <a href="paginas/bolabasquete.php"><img src="imagens/Bola de Basquete.png" width="120%"></a>
+                    <a href="paginas/bolabasquete.php"><img src="imagens/Basquete1.png" width="120%"></a>
 
                     <div class="text-prod">
                         <p class="prod-paragrafo">Bola de Basquete Spalding Fastbreak NBA 7</p>
@@ -150,7 +150,7 @@
             </div>
             <br>
             <div class="produto">
-                <img src="imagens/whey optium 2,341 kg.png" width="120%">
+                <img src="imagens/Whey1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo">Whey Protein Optimum Nutrition 100% Whey Gold Standard - Chocolate Mint -
@@ -164,7 +164,7 @@
             </div>
 
             <div class="produto">
-                <img src="imagens/mochila-nike.png" width="120%">
+                <img src="imagens/Mochila1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo">Mochila Nike Elemental 2.0 LBR - 21 Litros</p>
@@ -177,7 +177,7 @@
                 </div>
             </div>
             <div class="produto">
-                <img src="imagens/Bola Final champions.png" width="120%">
+                <img src="imagens/Bolachampions1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo">Bola de Futebol de Campo adidas UEFA Champions League Istanbul 20</p>
@@ -191,7 +191,7 @@
             </div>
 
             <div class="produto">
-                <img src="imagens/tenis nike revolution feminino.png" width="120%">
+                <img src="imagens/TenisrevolutionF1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo">Tênis Nike Revolution 5 Ext - Feminino</p>
@@ -204,7 +204,7 @@
                 </div>
             </div>
             <div class="produto">
-                <img src="imagens/camisa psg 20 21 nike masculina.png" width="120%">
+                <img src="imagens/Psg1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo">Camisa PSG III 20/21 Nike - Masculina</p>
@@ -231,7 +231,7 @@
             <!--***********************************************************************************************-->
 
             <div class="produto2">
-                <img src="imagens/Liverpool camiseta 1.png" width="120%">
+                <img src="imagens/Liverpool1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Liverpool I 20/21 Nike Masculina</p>
@@ -247,7 +247,7 @@
 
 
             <div class="produto2">
-                <img src="imagens/PSG camisa 1.png" width="120%">
+                <img src="imagens/Psgi1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa PSG I 20/21 Nike Masculina</p>
@@ -261,7 +261,7 @@
             </div>
 
             <div class="produto2">
-                <img src="imagens/Chelsea camisa 1.png" width="120%">
+                <img src="imagens/Chelsea1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Chelsea I 20/21 Nike Masculina</p>
@@ -277,7 +277,7 @@
 
 
             <div class="produto2">
-                <img src="imagens/Real Madrid camisa 1.png" width="120%">
+                <img src="imagens/Real1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Real Madrid I 20/21</p>
@@ -292,7 +292,7 @@
             </div>
 
             <div class="produto2">
-                <img src="imagens/Bayer camiseta 1.png" width="120%">
+                <img src="imagens/Bayern1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Bayern de Munique I 20/21</p>
@@ -308,7 +308,7 @@
             </div>
 
             <div class="produto2">
-                <img src="imagens/United first kit.jpeg" width="120%">
+                <img src="imagens/M_United1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Manchester United I adidas 20/21 - Masculina</p>
@@ -321,7 +321,7 @@
             </div>
 
             <div class="produto2">
-                <img src="imagens/Juventus.jpeg" width="120%">
+                <img src="imagens/Juventus1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Juventus I 20/21 adidas - Masculina</p>
@@ -334,7 +334,7 @@
             </div>
 
             <div class="produto2">
-                <img src="imagens/manCity.jfif" width="120%">
+                <img src="imagens/City1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Manchester City II 20/21 Puma - Masculina</p>
@@ -347,7 +347,7 @@
             </div>
 
             <div class="produto2">
-                <img src="imagens/Barcelona.jpeg" width="120%">
+                <img src="imagens/Barcelona1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Barcelona I 20/21 Nike - Masculina</p>
@@ -360,7 +360,7 @@
             </div>
 
             <div class="produto2">
-                <img src="imagens/Arsenal.jpeg" width="120%">
+                <img src="imagens/Arsenal1.png" width="120%">
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Arsenal II 20/21 adidas - Masculina</p>

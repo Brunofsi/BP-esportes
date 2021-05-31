@@ -3,6 +3,8 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="icon" type="imagem/png" href="imagens/favicon.ico" />
+
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">

@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <link rel="icon" type="imagem/png" href="imagens/favicon.ico" />
+    <link rel="icon" type="imagem/png" href="../imagens/favicon.ico" />
 
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="../estilos.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,20 +18,11 @@
 </head>
 
 <body>
-    <div class="topnav">
-        <a href="index.php">Home</a>
+    <div class="topnav nav justify-content-end">
+        <a href="../index.php">Home</a>
         <a href="cadastrar.php"> Cadastrar</a>
         <a href="login.php" class="active">Login</a>
-        <div class="search-container">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Procurar.." name="Procurar">
-                <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-search" viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg></button>
-            </form>
-        </div>
+
     </div>
 
     <!------------------------------------------------------------------------------------------------------------------------------------------->
@@ -37,9 +30,70 @@
 
         <div class="corpo">
             <br>
-            
+
+    
+            <h2 style="text-align:center">Login</h2>
+
+            <div class="container">
+                <form action="../VerificarUsuario.php" method="post">
+                    <div class="row">
+                      
+                      
+                        <div class="vl">
+
+                        </div>
+
+                        <div class="col">
+                            <a href="https://www.facebook.com/" class="fb btn text-primary">
+                                <i class="fa fa-facebook fa-fw"></i> Logar com Facebook
+                            </a>
+                            <a href="https://www.twitter.com/" class="twitter btn text-info">
+                                <i class="fa fa-twitter fa-fw"></i> Logar com Twitter
+                            </a>
+                            <a href="https://www.google.com/" class="google btn text-danger"><i class="fa fa-google fa-fw">
+                                </i> Logar com Google+
+                            </a>
+                        </div>
+
+                        <div class="col">
+
+
+                            <input type="text" name="email" placeholder="Email" required>
+                            <input type="password" name="password" placeholder="Senha" required>
+                            <input type="submit" value="Login">
+
+                            <?php if(isset($_GET['login']) && $_GET['login'] == 'error'){ ?>
+
+                              <div class="text-danger">Usuário ou senha inválido(s)</div>
+                                       
+                            <?php } ?>
+
+                            <?php if(isset($_GET['login']) && $_GET['login'] == 'sucesso'){ ?>
+
+                            <div class="text-success">Login realizado com sucesso.</div>
+         
+                            <?php } ?>
+                       
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="bottom-container">
+                <div class="row">
+                    <div class="col">
+                        <a href="cadastrar.php" style="color:white" class="btn">Não sou cadastrado</a>
+                    </div>
+                    <div class="col">
+                        <a href="#" style="color:white" class="btn">Esqueceu a senha?</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <br><br>
     </div>
+    
     <div class="rodape">
         <div class="incone">
             <a href="https://www.instagram.com/" style="margin-left: 5%;"><svg xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +116,7 @@
 
         <div class="formasPG">
 
-            <img src="imagens/siteSeguro.png">
+            <img src="../imagens/siteSeguro.png">
 
 
         </div>

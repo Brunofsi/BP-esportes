@@ -3,9 +3,9 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="icon" type="imagem/png" href="imagens/favicon.ico" />
+    <link rel="icon" type="imagem/png" href="../imagens/favicon.ico" />
     
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="../estilos.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,7 @@
     <!--Menu----------------------------------------------------------->
 
     <div class="topnav nav justify-content-end">
-        <a href="index.php">Home</a>
+        <a href="../index.php">Home</a>
         <a href="cadastrar.php" class="active"> Cadastrar</a>
         <a href="login.php">Login</a>
     </div>
@@ -36,7 +36,7 @@
             <div class="container mt-3">
                 <h3>Faça seu cadastro</h3>
 
-                <form action="realizarCadastro.php" method="post">
+                <form action="../realizarCadastro.php" method="post">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Nome</span>
@@ -70,7 +70,7 @@
                         <option selected>Estado</option>
                         <?php
 
-                        require('coneccao.php');
+                        require('../coneccao.php');
 
 				        if($conexao){
 
@@ -137,7 +137,7 @@
 
             <div class="formasPG">
 
-                <img src="imagens/siteSeguro.png">
+                <img src="../imagens/siteSeguro.png">
 
 
             </div>
@@ -160,7 +160,7 @@
                 if ($(this).val()) {
                     $('#cod_cidades').hide();
                     $('.carregando').show();
-                    $.getJSON('ajax.php?estado=' + $(this).val(), function(j) {
+                    $.getJSON('../ajax.php?estado=' + $(this).val(), function(j) {
                         var options = '<option value=""></option>';
                         for (var i = 0; i < j.length; i++) {
                             options += '<option value="' + j[i].cod_cidades + '">' + j[i].nome +

@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html lang="pt-br">
-
+<?php require('session.php');?>
 <head>
     <link rel="icon" type="imagem/png" href="imagens/favicon.ico" />
 
@@ -24,9 +24,18 @@
 
     <div class="topnav nav justify-content-end">
         <a class="active" href="index.php">Home</a>
+     
+        <?php if($_SESSION['autenticado']=='nao'){ ?>
+              
         <a href="cadastrar.php">Cadastrar</a>
         <a href="login.php">Login</a>
-     
+        <?php echo $_SESSION['autenticado']; ?>                 
+          <?php } else {?>
+                              
+                  <div style="  color:pink; float:left; margin:1%;"><?php print_r('Bem vindo, '.$_SESSION['user']); ?></div>
+                    <a href="Autenticado.php">Sair</a> 
+                    <?php echo $_SESSION['autenticado']; ?> 
+                  <?php } ?>
  
     </div>
 

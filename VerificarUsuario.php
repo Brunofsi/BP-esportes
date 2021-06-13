@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require('coneccao.php');
 
 $email = $_POST['email'];
@@ -14,9 +14,12 @@ if(mysqli_num_rows($sql)>0 && mysqli_num_rows($sql1)>0) $autenticar=true;
 
 
 if($autenticar) {
+    $_SESSION['autenticado']='sim';
+    $_SESSION['user']=$email;
     header('Location: login.php?login=sucesso');
 }
 else{
+    $_SESSION['autenticado']='nao';
     header('Location: login.php?login=error');
 }
 

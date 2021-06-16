@@ -79,9 +79,12 @@
                     <span class="carousel-control-next-icon"></span>
                 </a>
             </div>
+
+
             <div class="conteiner-prod">
 
                 <img src="imagens/Frete Gratis.png" width="100%">
+ 
                 <div class="produto">
                     <a href="paginas/camisaUnited.php"><img src="imagens/United1.png" width="120%"
                             style="clear: both;"></a>
@@ -96,7 +99,7 @@
                 </div>
 
                 <div class="produto">
-                    <a href="paginas/camisasp.php"><img src="imagens/SaoPaulo1.png" width="120%"></a>
+                    <a href="view/camisasp.php"><img src="imagens/SaoPaulo1.png" width="120%"></a>
 
                     <div class="text-prod">
                         <p class="prod-paragrafo">Camisa do São Paulo I 2021 adidas - Masculina</p>

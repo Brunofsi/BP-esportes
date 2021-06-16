@@ -12,10 +12,11 @@ $sql1 = mysqli_query($conexao, "SELECT * FROM usuario WHERE senha = '{$senha}'")
 
 if(mysqli_num_rows($sql)>0 && mysqli_num_rows($sql1)>0) $autenticar=true;
 
+$nome=$sql->fetch_array();
 
 if($autenticar) {
     $_SESSION['autenticado']='sim';
-    $_SESSION['user']=$email;
+    $_SESSION['user']=$nome['nome'];
     header('Location: login.php?login=sucesso');
 }
 else{

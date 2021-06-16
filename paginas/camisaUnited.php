@@ -61,7 +61,7 @@
                             <a class="dropdown-item" href="#">G</a>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-success">Comprar</button>
+                    <a href="../carrinho.php?carrinho=1" class="btn btn-success">Comprar</a>
                 </div>
             </div>
             <div class="meio">

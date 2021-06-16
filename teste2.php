@@ -1,114 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="pt-br">
 <?php require('session.php');?>
 <head>
     <link rel="icon" type="imagem/png" href="imagens/favicon.ico" />
 
     <link rel="stylesheet" type="text/css" href="estilos.css">
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap1.css">
+    <link href="bootstrap2.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="jquery.min.js"></script>
+
+    <title>BP Esportes</title>
 </head>
 
-<body> 
+<body>
 
-
-               
+    <!--Menu----------------------------------------------------------->
 
     <div class="topnav nav justify-content-end">
-
-    <a href="index.php">Home</a>
-    <a href="login.php" class="active">Login</a> 
-
-    <?php if($_SESSION['autenticado']=='nao'){ ?>
-        
-        <a href="cadastrar.php"> Cadastrar</a>
-                            
-          <?php } else {
+        <a class="active" href="index.php">Home</a>
+     
+        <?php if($_SESSION['autenticado']=='nao'){ ?>
+              
+        <a href="cadastrar.php">Cadastrar</a>
+        <a href="login.php">Login</a>
+        <?php echo $_SESSION['autenticado']; ?>                 
+          <?php } else {?>
                               
-                    header('Location: index.php');
-
-                   } ?>
-
-
+                  <div style="  color:pink; float:left; margin:1%;"><?php print_r('Bem vindo, '.$_SESSION['user']); ?></div>
+                    <a href="Autenticado.php">Sair</a> 
+                    <?php echo $_SESSION['autenticado']; ?> 
+                  <?php } ?>
+ 
     </div>
-               
-               
+
 
     <!------------------------------------------------------------------------------------------------------------------------------------------->
-    <div class="principal">
 
-        <div class="corpo">
-            <br>
+<div class="produto">
+                   <?php
+                       require("coneccao.php");
+                       $sql = "SELECT * FROM produto";
+                      $qr = mysqli_query($conexao,$sql);
+                      while($ln = mysqli_fetch_assoc($qr)){
+                          
+                        echo '<img width="120%" src="imagens/'.$ln['nome'].'.png" />';
+                        echo '<p class="prod-paragrafo">'.$ln['nome'].'</p>';
+             
+                        echo '<p class="preço2">'.number_format($ln['valor'], 2, ',', '.').'</p>';
 
-    
-            <h2 style="text-align:center">Login</h2>
+                   
+             
+                       echo '<a href="view/camisasp.php?'.$ln['idProduto'].'">Comprar</a>';
+             
+                      echo '<hr/>';
+                       }
+                    ?>
+ </div>
 
-            <div class="container">
-                <form action="VerificarUsuario.php" method="post">
-                    <div class="row">
-                      
-                      
-                        <div class="vl">
-
-                        </div>
-
-                        <div class="col">
-                            <a href="https://www.facebook.com/" class="fb btn text-primary">
-                                <i class="fa fa-facebook fa-fw"></i> Logar com Facebook
-                            </a>
-                            <a href="https://www.twitter.com/" class="twitter btn text-info">
-                                <i class="fa fa-twitter fa-fw"></i> Logar com Twitter
-                            </a>
-                            <a href="https://www.google.com/" class="google btn text-danger"><i class="fa fa-google fa-fw">
-                                </i> Logar com Google+
-                            </a>
-                        </div>
-
-                        <div class="col">
-
-
-                            <input type="text" name="email" placeholder="Email" required>
-                            <input type="password" name="password" placeholder="Senha" required>
-                            <input type="submit" value="Login">
-
-                            <?php if(isset($_GET['login']) && $_GET['login'] == 'error'){ ?>
-
-                              <div class="text-danger">Usuário ou senha inválido(s)</div>
-                                       
-                            <?php } ?>
-
-                            <?php if(isset($_GET['login']) && $_GET['login'] == 'sucesso'){ ?>
-
-                            <div class="text-success">Login realizado com sucesso.</div>
-         
-                            <?php } ?>
-                       
-                        </div>
-
-                    </div>
-                </form>
-            </div>
-
-            <div class="bottom-container">
-                <div class="row">
-                    <div class="col">
-                        <a href="Cadastrar.html" style="color:white" class="btn">Não sou cadastrado</a>
-                    </div>
-                    <div class="col">
-                        <a href="#" style="color:white" class="btn">Esqueceu a senha?</a>
-                    </div>
-                </div>
-            </div>
+                <div style="clear: both;"></div>
+            <br><br><br>
         </div>
-        <br><br>
+        <br><br><br>
     </div>
-    
+
     <div class="rodape">
         <div class="incone">
             <a href="https://www.instagram.com/" style="margin-left: 5%;"><svg xmlns="http://www.w3.org/2000/svg"
@@ -136,13 +96,26 @@
 
         </div>
 
-      
 
 
-      
     </div>
 
-    
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

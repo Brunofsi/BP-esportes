@@ -1,12 +1,10 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
-
+<?php require('../model/session.php');?>
 <head>
     <link rel="icon" type="imagem/png" href="../imagens/favicon.ico" />
 
-    <link rel="stylesheet" type="text/css" href="../estilos.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,13 +15,29 @@
     <script src="jquery.min.js"></script>
 </head>
 
-<body>
+<body> 
+
+
+
     <div class="topnav nav justify-content-end">
-        <a href="../index.php">Home</a>
+
+    <a href="../index.php">Home</a>
+    <a href="login.php" class="active">Login</a> 
+
+    <?php if($_SESSION['autenticado']=='nao'){ ?>
+        
         <a href="cadastrar.php"> Cadastrar</a>
-        <a href="login.php" class="active">Login</a>
+                            
+          <?php } else {
+                              
+                    header('Location: ../index.php');
+
+                   } ?>
+
 
     </div>
+               
+               
 
     <!------------------------------------------------------------------------------------------------------------------------------------------->
     <div class="principal">
@@ -35,7 +49,7 @@
             <h2 style="text-align:center">Login</h2>
 
             <div class="container">
-                <form action="../VerificarUsuario.php" method="post">
+                <form action="../controller/VerificarUsuario.php" method="post">
                     <div class="row">
                       
                       
@@ -118,15 +132,9 @@
 
             <img src="../imagens/siteSeguro.png">
 
-
         </div>
-
-      
-
-
       
     </div>
-
     
 </body>
 

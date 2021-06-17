@@ -1,18 +1,18 @@
 <!doctype html>
 
 <html lang="pt-br">
-<?php require('session.php');?>
+<?php require('model/session.php');?>
 <head>
     <link rel="icon" type="imagem/png" href="imagens/favicon.ico" />
 
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap1.css">
-    <link href="bootstrap2.css" rel="stylesheet"
+    <link rel="stylesheet" href="css/bootstrap1.css">
+    <link href="css/bootstrap2.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <title>BP Esportes</title>
@@ -27,16 +27,16 @@
      
         <?php if($_SESSION['autenticado']=='nao'){ ?>
               
-        <a href="cadastrar.php">Cadastrar</a>
-        <a href="login.php">Login</a>
-        <?php echo $_SESSION['autenticado']; ?>                 
+        <a href="view/cadastrar.php">Cadastrar</a>
+        <a href="view/login.php">Login</a>
+                      
           <?php } else {?>
                               
                   <div style="  color:pink; float:left; margin:1%;"><?php print_r('Bem vindo, '.$_SESSION['user']); ?></div>
-                    <a href="Autenticado.php">Sair</a> 
-                    <?php echo $_SESSION['autenticado']; ?> 
+                    <a href="controller/Autenticado.php">Sair</a> 
+                     
                   <?php } ?>
- 
+                  <a href="view/carrinho.php">Carrinho</a>
     </div>
 
 
@@ -85,8 +85,40 @@
 
                 <img src="imagens/Frete Gratis.png" width="100%">
  
+            
+            <!--------------------------------------------------------------------------------------------------------------------------->
+
+            <?php
+
+                   /* require("coneccao.php");
+                    $sql = "SELECT * FROM produto";
+                    $qr = mysqli_query($conexao,$sql);
+                      
+                    while($ln = mysqli_fetch_assoc($qr)){
+                        
+                        
+                        echo '<div class="produto">';
+                        echo '<a href="view/produto.php?acao=add&id='.$ln['idProduto'].'">';
+                        //echo '<a href="view/produto.php?acao=add&id='.$ln['idProduto'].'">Comprar</a>';
+                        echo '<img width="120%" src="imagens/'.$ln['nome'].'.png" />';
+                        echo '</a>';
+                        echo '<p class="prod-paragrafo">'.$ln['nome'].'</p>';
+                        echo '<p class="text-success">FRETE GRÁTIS</p>';
+                        echo '<p class="preço1">'.number_format($ln['valor']+100, 2, ',', '.').'</p>';
+                        echo '<p class="preço2">'.number_format($ln['valor'], 2, ',', '.').'</p>';
+                        echo '<p class="preço3">4x de '.($ln['valor']/4).'</p>';
+                       
+                     
+                        
+                        echo '</div>';
+                        
+                       }*/
+
+                    ?>
+
+
                 <div class="produto">
-                    <a href="paginas/camisaUnited.php"><img src="imagens/United1.png" width="120%"
+                    <a href="view/produto.php?acao=add&id=1"><img src="imagens/United1.png" width="120%"
                             style="clear: both;"></a>
                     <div class="text-prod">
                         <p class="prod-paragrafo">Camisa Manchester United Third 20/21 s/n° Torcedor Adidas</p>
@@ -99,7 +131,7 @@
                 </div>
 
                 <div class="produto">
-                    <a href="view/camisasp.php"><img src="imagens/SaoPaulo1.png" width="120%"></a>
+                    <a href="view/produto.php?acao=add&id=2"><img src="imagens/SaoPaulo1.png" width="120%"></a>
 
                     <div class="text-prod">
                         <p class="prod-paragrafo">Camisa do São Paulo I 2021 adidas - Masculina</p>
@@ -113,7 +145,7 @@
                 </div>
 
                 <div class="produto">
-                    <a href="paginas/tenisasics.php"><img src="imagens/TenisAsics1.png" width="120%"></a>
+                    <a href="view/produto.php?acao=add&id=3"><img src="imagens/TenisAsics1.png" width="120%"></a>
 
                     <div class="text-prod">
                         <p class="prod-paragrafo">Tênis Asics Patriot 12 Noosa - Masculino</p>
@@ -126,7 +158,7 @@
                     </div>
                 </div>
                 <div class="produto">
-                    <img src="imagens/TenisrevolutionM1.png" width="120%">
+                <a href="view/produto.php?acao=add&id=10"><img src="imagens/TenisrevolutionM1.png" width="120%"></a>
 
                     <div class="text-prod">
                         <p class="prod-paragrafo">Tênis Nike Revolution 5 - Masculino</p>
@@ -139,7 +171,7 @@
                     </div>
                 </div>
                 <div class="produto">
-                    <a href="paginas/bolabasquete.php"><img src="imagens/Basquete1.png" width="120%"></a>
+                    <a href="view/produto.php?acao=add&id=4"><img src="imagens/Basquete1.png" width="120%"></a>
 
                     <div class="text-prod">
                         <p class="prod-paragrafo">Bola de Basquete Spalding Fastbreak NBA 7</p>
@@ -164,7 +196,7 @@
             </div>
             <br>
             <div class="produto">
-                <img src="imagens/Whey1.png" width="120%">
+            <a href="view/produto.php?acao=add&id=5"><img src="imagens/Whey1.png" width="120%"></a>
 
                 <div class="text-prod">
                     <p class="prod-paragrafo">Whey Protein Optimum Nutrition 100% Whey Gold Standard - Chocolate Mint -
@@ -178,7 +210,7 @@
             </div>
 
             <div class="produto">
-                <img src="imagens/Mochila1.png" width="120%">
+            <a href="view/produto.php?acao=add&id=6"><img src="imagens/Mochila1.png" width="120%"></a>
 
                 <div class="text-prod">
                     <p class="prod-paragrafo">Mochila Nike Elemental 2.0 LBR - 21 Litros</p>
@@ -191,7 +223,7 @@
                 </div>
             </div>
             <div class="produto">
-                <img src="imagens/Bolachampions1.png" width="120%">
+            <a href="view/produto.php?acao=add&id=7"><img src="imagens/Bolachampions1.png" width="120%"></a>
 
                 <div class="text-prod">
                     <p class="prod-paragrafo">Bola de Futebol de Campo adidas UEFA Champions League Istanbul 20</p>
@@ -205,7 +237,7 @@
             </div>
 
             <div class="produto">
-                <img src="imagens/TenisrevolutionF1.png" width="120%">
+            <a href="view/produto.php?acao=add&id=8"><img src="imagens/TenisrevolutionF1.png" width="120%"></a>
 
                 <div class="text-prod">
                     <p class="prod-paragrafo">Tênis Nike Revolution 5 Ext - Feminino</p>
@@ -218,7 +250,7 @@
                 </div>
             </div>
             <div class="produto">
-                <img src="imagens/Psg1.png" width="120%">
+            <a href="view/produto.php?acao=add&id=9"> <img src="imagens/Psg1.png" width="120%"></a>
 
                 <div class="text-prod">
                     <p class="prod-paragrafo">Camisa PSG III 20/21 Nike - Masculina</p>
@@ -245,7 +277,7 @@
             <!--***********************************************************************************************-->
 
             <div class="produto2">
-                <img src="imagens/Liverpool1.png" width="120%">
+            <a href="view/produto.php?acao=add&id=11"><img src="imagens/Liverpool1.png" width="120%"></a>
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Liverpool I 20/21 Nike Masculina</p>
@@ -261,7 +293,7 @@
 
 
             <div class="produto2">
-                <img src="imagens/Psgi1.png" width="120%">
+            <a href="view/produto.php?acao=add&id=12"><img src="imagens/Psgi1.png" width="120%"></a>
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa PSG I 20/21 Nike Masculina</p>
@@ -275,7 +307,7 @@
             </div>
 
             <div class="produto2">
-                <img src="imagens/Chelsea1.png" width="120%">
+            <a href="view/produto.php?acao=add&id=13"><img src="imagens/Camisa Chelsea 1 2021 Nike Masculina.png" width="120%"></a>
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Chelsea I 20/21 Nike Masculina</p>
@@ -291,7 +323,7 @@
 
 
             <div class="produto2">
-                <img src="imagens/Real1.png" width="120%">
+            <a href="view/produto.php?acao=add&id=14"><img src="imagens/Camisa Real Madrid I 2021.png" width="120%"></a>
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Real Madrid I 20/21</p>
@@ -306,7 +338,7 @@
             </div>
 
             <div class="produto2">
-                <img src="imagens/Bayern1.png" width="120%">
+            <a href="view/produto.php?acao=add&id=15"><img src="imagens/Bayern1.png" width="120%"></a>
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Bayern de Munique I 20/21</p>
@@ -322,7 +354,7 @@
             </div>
 
             <div class="produto2">
-                <img src="imagens/M_United1.png" width="120%">
+            <a href="view/produto.php?acao=add&id=16"><img src="imagens/M_United1.png" width="120%"></a>
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Manchester United I adidas 20/21 - Masculina</p>
@@ -335,7 +367,7 @@
             </div>
 
             <div class="produto2">
-                <img src="imagens/Juventus1.png" width="120%">
+            <a href="view/produto.php?acao=add&id=17"><img src="imagens/Camisa Juventus 1 2021 adidas - Masculina.png" width="120%"></a>
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Juventus I 20/21 adidas - Masculina</p>
@@ -348,7 +380,7 @@
             </div>
 
             <div class="produto2">
-                <img src="imagens/City1.png" width="120%">
+            <a href="view/produto.php?acao=add&id=18"><img src="imagens/City1.png" width="120%"></a>
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Manchester City II 20/21 Puma - Masculina</p>
@@ -361,7 +393,7 @@
             </div>
 
             <div class="produto2">
-                <img src="imagens/Barcelona1.png" width="120%">
+            <a href="view/produto.php?acao=add&id=19"><img src="imagens/Camisa Barcelona 1 2021 Nike - Masculina.png" width="120%"></a>
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Barcelona I 20/21 Nike - Masculina</p>
@@ -374,7 +406,7 @@
             </div>
 
             <div class="produto2">
-                <img src="imagens/Arsenal1.png" width="120%">
+            <a href="view/produto.php?acao=add&id=20"><img src="imagens/Arsenal1.png" width="120%"></a>
 
                 <div class="text-prod">
                     <p class="prod-paragrafo2">Camisa Arsenal II 20/21 adidas - Masculina</p>
@@ -415,10 +447,7 @@
 
             <img src="imagens/siteSeguro.png">
 
-
         </div>
-
-
 
     </div>
 

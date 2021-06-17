@@ -2,9 +2,9 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="icon" type="imagem/png" href=";;/imagens/favicon.ico" />
+    <link rel="icon" type="imagem/png" href="../imagens/favicon.ico" />
 
-    <link rel="stylesheet" type="text/css" href="../estilos.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,7 +12,7 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="jquery.min.js"></script>
+    <script src="../jquery.min.js"></script>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
             <img src="../imagens/siteSeguro.png">
 
 
-        </div>    
+        </div>
       
     </div>
     

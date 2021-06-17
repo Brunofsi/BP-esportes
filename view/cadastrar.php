@@ -5,7 +5,7 @@
 <head>
     <link rel="icon" type="imagem/png" href="../imagens/favicon.ico" />
     
-    <link rel="stylesheet" type="text/css" href="../estilos.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,7 +36,7 @@
             <div class="container mt-3">
                 <h3>Faça seu cadastro</h3>
 
-                <form action="../realizarCadastro.php" method="post">
+                <form action="../controller/realizarCadastro.php" method="post">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Nome</span>
@@ -70,23 +70,21 @@
                         <option selected>Estado</option>
                         <?php
 
-                        require('../coneccao.php');
+                        require('../model/coneccao.php');
 
 				        if($conexao){
 
-					   $query = "SELECT * FROM estados";
-					   $estados = mysqli_query($conexao, $query);
+                            $query = "SELECT * FROM estados";
+                            $estados = mysqli_query($conexao, $query);
 
-					      while ($linha = $estados->fetch_array()){						
-						     echo "<option value = '".$linha["cod_estados"]."'>" .$linha["nome"] ."</option>";				
-					    }
+                                while ($linha = $estados->fetch_array()){						
+                                    echo "<option value = '".$linha["cod_estados"]."'>" .$linha["nome"] ."</option>";	
+                                }
 				        }
 			            ?>
                     </select>
 
                     <br><br>
-
-
 
                     <span class="carregando">Aguarde, carregando...</span>
                     <select name="cod_cidades" id="cod_cidades" class="custom-select">
@@ -160,7 +158,7 @@
                 if ($(this).val()) {
                     $('#cod_cidades').hide();
                     $('.carregando').show();
-                    $.getJSON('../ajax.php?estado=' + $(this).val(), function(j) {
+                    $.getJSON('../model/ajax.php?estado=' + $(this).val(), function(j) {
                         var options = '<option value=""></option>';
                         for (var i = 0; i < j.length; i++) {
                             options += '<option value="' + j[i].cod_cidades + '">' + j[i].nome +
@@ -176,7 +174,7 @@
         });
         </script>
 
-        <script src="script.js"></script>
+        <script src="../script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
         </script>
